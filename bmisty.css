@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #26ace6;
+    margin: 0;
+    
+}
+
+.container {
+    background-color: white;
+   padding-left: 20px;
+   border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    height:  600px;
+    
+}
+
+h1 {
+    color: #333;
+}
+
+.input-section {
+
+    width: 380px;
+    margin-bottom: 15px;
+    
+}
+
+.input-section label {
+    
+    text-align: left;
+    margin-bottom: 5px;
+    gap: 10px;
+}
+
+.input-section input {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+    gap: 10px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.result p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+/* Gauge styles */
+.bmi-gauge {
+    position: relative;
+    width: 200px;
+    height: 100px;
+    border-radius: 100px 100px 0 0;
+    background: conic-gradient(#3498db 0% 25%, #2ecc71 25% 50%, #f39c12 50% 75%, #e74c3c 75% 100%);
+    margin: 20px auto;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.needle {
+    position: absolute;
+    width: 4px;
+    height: 100px;
+    background: black;
+    top: 50%;
+    left: 50%;
+    transform-origin: bottom;
+    transform: translateX(-50%) rotate(0deg);
+    z-index: 2;
+}
+
+.gauge-cover {
+    position: absolute;
+    width: 140px;
+    height: 70px;
+    background-color: white;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 70px 70px 0 0;
+    z-index: 1;
+}

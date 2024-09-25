@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="bmisty.css">
+</head>
+<body>
+    
+
+  <div class="container">
+        <h1>BMI Calculator</h1>
+        <div class="input-section">
+            <label for="height">Height:</label>
+            <input type="text" id="height-feet" placeholder="Feet"> 
+            <input type="text" id="height-inches" placeholder="Inches">
+        </div>
+
+        <div class="input-section">
+            <label for="weight">Weight (lbs):</label>
+            <input type="text" id="weight" placeholder="Weight in pounds">
+        </div>
+
+        <div class="input-section">
+            <label for="age">Age:</label>
+            <input type="text" id="age" placeholder="Age">
+        </div>
+
+        <button id="calculate-btn">Calculate BMI</button>
+
+        <!-- Dial and Needle -->
+        <div class="bmi-gauge">
+            <div class="needle" id="needle"></div>
+            <div class="gauge-cover"></div>
+        </div>
+
+        <div class="result">
+            <p>Your BMI: <span id="bmi-result"></span></p>
+            <p>Category: <span id="bmi-category"></span></p>
+        </div>
+    </div>
+    
+   <script src="bmij.js"></script>
+</body>
+</html>
